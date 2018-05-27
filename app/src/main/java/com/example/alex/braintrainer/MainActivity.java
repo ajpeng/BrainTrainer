@@ -107,13 +107,13 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
         numberOfQuestions = 0;
 
-        timeTextView.setText("30s");
+        timeTextView.setText("15s");
         scoreTextView.setText("0 / 0");
         resultTextView.setText("");
         playAgainBtn.setVisibility(View.INVISIBLE);
         generateQuestion();
 
-        new CountDownTimer(3010, 1000) {
+        new CountDownTimer(15010, 1000) {
 
             @Override
             public void onTick(long millisUntilFinished) {

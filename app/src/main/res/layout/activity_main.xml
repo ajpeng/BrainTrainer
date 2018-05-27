@@ -34,11 +34,24 @@
             android:layout_marginLeft="64dp"
             android:layout_marginRight="64dp"
             android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
             android:text="25 - 5"
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/scoreTextView"
             app:layout_constraintStart_toEndOf="@+id/timeTextView"
             app:layout_constraintTop_toTopOf="@+id/timeTextView" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="0/0"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/questionTextView" />
 
         <android.support.v7.widget.GridLayout
             android:id="@+id/gridLayout"
@@ -50,7 +63,6 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/questionTextView">
 
@@ -122,7 +134,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="64dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
             android:textSize="30sp"
@@ -131,22 +143,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridLayout"
             app:layout_constraintVertical_bias="0.657" />
-
-        <TextView
-            android:id="@+id/scoreTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginStart="8dp"
-            android:background="@android:color/holo_orange_light"
-            android:text="0/0"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.578"
-            app:layout_constraintStart_toEndOf="@+id/questionTextView"
-            app:layout_constraintTop_toTopOf="@+id/questionTextView" />
 
         <Button
             android:id="@+id/playAgainBtn"
